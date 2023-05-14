@@ -1,0 +1,26 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+0,19651.208,235814.5,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,,,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Load balancing,Application Load Balancer,0,62.05,744.6,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,VPN Connection,0,73,876,USD,"Working days per month (22), Number of Site-to-Site VPN Connections (2)"
+My Estimate,US East (N. Virginia),Amazon EC2,Amazon EC2 ,0,4812.8,57753.6,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.8xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Simple Storage Service,S3 Standard,0,293.55,3522.6,USD,S3 Standard storage (1 TB per month)
+My Estimate,US East (N. Virginia),Simple Storage Service,Data Transfer,0,0,0,USD,"DT Inbound: All other regions (1 TB per month), DT Outbound: Not selected (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MariaDB,0,13743.2,164918.4,USD,"Storage volume (General Purpose SSD (gp3)), Storage amount (2 TB), Quantity (2), Instance type (db.m5.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (3 TB), General Purpose SSD (gp3) - IOPS (12000), General Purpose SSD (gp3) - Throughput (500 MiBps)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,666.608,7999.3,USD,"Number of Metrics (includes detailed and custom metrics) (500), Standard Logs: Data Ingested (1 TB), Number of Dashboards (), Logs Delivered to CloudWatch Logs: Data Ingested (0 TB), Logs Delivered to S3: Data Ingested (0 TB)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+The resources will I add:,,,,,,,,
+Amazon CloudWatch for monitor log information of the system.,,,,,,,,
+The changes I made:,,,,,,,,
+Update the ec2-instance service instance type from m5.4xlarge to m5.8xlarge. ,,,,,,,,
+Update the RDS service instance type from db.m4.4xlarge to db.m5.12xlarge.,,,,,,,,
